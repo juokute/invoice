@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Brygada 1918", serif;
+}
+
+.SF-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: indigo;
+}
+
+.invoice-number-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.SF-number {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.SF-invoice-date {
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.SF-due-date {
+  justify-content:flex-end;
+  margin: 50px 0;
+  padding-right: 100px;
+  width: 100%;
+}
+
+.due-date {
+  font-weight: 600;
+}
+
+.seller-buyer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buyer-box {
+  display: flex;
+  width: 350px;
+}
+
+.seller-box {
+  display: flex;
+  width: 350px;
+}
+
+.main-info {
+    font-weight: 600;
+}
+
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+}
