@@ -5,7 +5,6 @@
   font-family: "Brygada 1918", serif;
 }
 
-
 .SF-top {
   display: flex;
   flex-direction: column;
@@ -48,7 +47,7 @@ h1 {
 
 .buyer-box {
   display: flex;
-  width: 420px;
+  width: 430px;
   .buyer-name {
     color: indigo;
   }
@@ -67,23 +66,37 @@ h1 {
 }
 
 .items-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   text-align: center;
   gap: 10px;
   border-bottom: 2px solid rgb(163, 113, 199);
   border-top: 2px solid rgb(163, 113, 199);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+}
+
+.items-container::after {
+  content: '';
+  position: absolute;
+  top: 75px; /* aukštis, kur header baigiasi */
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgb(163, 113, 199);
 }
 
 .item-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 6px;
   color: indigo;
   font-weight: 600;
-  padding-top: 5px;
+  // padding-top: 5px;
+  // text-align: left;
+  line-height: 20px;
 
   > div {
     font-weight: normal;
@@ -94,21 +107,30 @@ h1 {
   }
 }
 
+.item-cell.description {
+  text-align: left !important;
+  width: 300px;
+}
+
+
 .SF-sum-section {
   display: flex;
   justify-content: center;
   width: 100%;
   gap: 20px;
+
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .SF-sum-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 660px;
+  width: 730px;
 
   line-height: 25px;
-  padding: 30px 100px 20px 0;
+  padding: 30px 70px 20px 0;
 }
 
 .SF-sum-box {
@@ -139,18 +161,28 @@ h1 {
 
 .sum-in-words {
   display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 500px;
-  padding: 0 0 68px 50px;
+  justify-content: flex-start;
+  align-items:flex-start;
+  width: auto;
+  padding: 0;
+  margin-top: 164px;
+  text-align: left;
 }
 
 .sum-words {
   font-weight: 600;
+  width: 450px;
 }
 
-.sign-box {
-  padding-top: 50px;
+.words {
+  font-weight: normal;
+  width: 140px;
+  margin-left: 50px;
 }
 
-
+.signs-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+  gap: 20px;
+}
