@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Brygada 1918", serif;
+}
+
+
+.SF-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 150px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: indigo;
+}
+
+.invoice-number-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.SFnumber {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: indigo;
+}
+
+.SF-invoice-date {
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: indigo;
+}
+
+.seller-buyer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+.buyer-box {
+  display: flex;
+  width: 420px;
+  .buyer-name {
+    color: indigo;
+  }
+}
+
+.seller-box {
+  display: flex;
+  width: 430px;
+  .seller-name {
+    color: indigo;
+  }
+}
+
+.main-info {
+  font-weight: 600;
+}
+
+.items-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  border-bottom: 2px solid rgb(163, 113, 199);
+  border-top: 2px solid rgb(163, 113, 199);
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  color: indigo;
+  font-weight: 600;
+  padding-top: 5px;
+
+  > div {
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.SF-sum-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.SF-sum-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 660px;
+
+  line-height: 25px;
+  padding: 30px 100px 20px 0;
+}
+
+.SF-sum-box {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  .sum-total {
+    font-weight: 600;
+    color: indigo;
+    font-size: 20px;
+  }
+}
+
+.total {
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.SF-due-date {
+  padding-top: 20px;
+}
+
+.due-date {
+  font-weight: 600;
+  color: indigo;
+}
+
+.sum-in-words {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 500px;
+  padding: 0 0 68px 50px;
+}
+
+.sum-words {
+  font-weight: 600;
+}
+
+.sign-box {
+  padding-top: 50px;
+}
+
+
