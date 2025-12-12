@@ -1,4 +1,4 @@
-console.log("Invoice");
+// console.log("Invoice");
 
 constPrintNumber = (invData) => {
   document.querySelector(".SFnumber").innerHTML = invData.number;
@@ -88,7 +88,7 @@ constPrintNumber = (invData) => {
         `
     );
   });
-  console.log(itemTotalSum.toFixed(2).replace(".", ",")) + " Eur";
+  // console.log(itemTotalSum.toFixed(2).replace(".", ",")) + " Eur";
 
   itemTotalSumPlusShipping = itemTotalSum + shipping;
 
@@ -215,7 +215,7 @@ constPrintNumber = (invData) => {
 fetch("https://in3.dev/inv/")
   .then((res) => res.json())
   .then((invData) => {
-    console.log(invData);
+    // console.log(invData);
 
     constPrintNumber(invData); // sugrįžę duomenys
   });
